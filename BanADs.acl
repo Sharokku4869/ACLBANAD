@@ -1,20 +1,21 @@
 #**********************************************************************
-# 11.11
-# 2019年11月11日20:58:33
+# 12.108
+# 2019年12月8日15:19:55
 # 转载需要注明版权和来源
 #
 # 屏蔽常用网站、视频、手机rom广告&运营商劫持广告&数据跟踪&开屏广告
 #
 # 参照lhie1的surge规则改编，致谢!! https://github.com/lhie1/Surge
 # 参照scomper的surge规则改编，致谢!! https://gist.github.com/scomper/915b04a974f9e11952babfd0bbb241a8/revisions
-# 参照大神的ACL4SSE规则改编，致谢!! https://github.com/ACL4SSR/ACL4SSR
-#
+# 参照https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
+# 参照https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+# 感谢以上大神的分享！
 # 参数解释：
-# [proxy_all] 默认代理-本规则使用
+# [proxy_all] 默认代理
 # [bypass_all] 默认直连
-# [outbound_block_list] 禁止访问列表 在25行
-# [bypass_list] 直连列表 在1207多行
-# [proxy_list] 代理列表 在6874多行
+# [outbound_block_list] 禁止访问列表
+# [bypass_list] 直连列表
+# [proxy_list] 代理列表
 # [remote_dns] 远程 DNS 解析 -不加使用本地 DNS
 #
 #**********************************************************************
@@ -473,7 +474,7 @@
 (^|\.)applovin\.com$
 (^|\.)guangzhuiyuan\.com$
 
-# Toutiao
+# Toutiao	
 (^|\.)(ad|sm|dsp|nativeapp|partner)\.toutiao\.com$
 
 # Twitter
@@ -1481,7 +1482,9 @@
 222.187.226.96/32
 223.6.255.99/32
 
-#adhosts
+#**********************************************************************
+
+# yhosts
 (^|\.)activate\.adobe\.com$
 (^|\.)ereg\.adobe\.com$
 (^|\.)hlrcv\.stage\.adobe\.com$
@@ -2563,6 +2566,7 @@
 (^|\.)dai\.shuzilm\.cn$
 (^|\.)stream\.shuzilm\.cn$
 (^|\.)www\.shuzilm\.cn$
+(^|\.)XiaoQiang$
 (^|\.)geo2\.adobe\.com$
 (^|\.)get3\.adobe\.com$
 (^|\.)flash\.2144\.com$
@@ -2620,23 +2624,12 @@
 (^|\.)osupdateservice\.yunos\.com$
 (^|\.)tvupgrade\.yunos\.com$
 (^|\.)uuidapi\.yunos\.com$
-(^|\.)ads\.gionee\.com$
-(^|\.)pdl\.gionee\.com$
-(^|\.)adres\.myaora\.net$
-(^|\.)adcore\.lenovomm\.com$
-(^|\.)pushapi\.lenovomm\.com$
-(^|\.)susapi\.lenovomm\.com$
-(^|\.)adapi\.lenovogame\.com$
-(^|\.)lcs\.dev\.surepush\.cn$
-(^|\.)susapi\.dev\.surepush\.cn$
-(^|\.)test\.surepush\.cn$
-(^|\.)stats\.mokeedev\.com$
-(^|\.)adsfs\.oppomobile\.com$
-(^|\.)adx\.ads\.oppomobile\.com$
-(^|\.)bdapi\.ads\.oppomobile\.com$
-(^|\.)data\.ads\.oppomobile\.com$
-(^|\.)httpdns\.push\.oppomobile\.com$
-(^|\.)analytics\.xgimi\.com$
+(^|\.)store2\.hispace\.hicloud\.com$
+(^|\.)store3\.hispace\.hicloud\.com$
+(^|\.)uc2\.hispace\.hicloud\.com$
+(^|\.)uc3\.hispace\.hicloud\.com$
+(^|\.)app-measurement\.com$
+(^|\.)cs02-pps-drcn\.dbankcdn\.com$
 (^|\.)api-flow\.flyme\.cn$
 (^|\.)bro\.flyme\.cn$
 (^|\.)t-e\.flyme\.cn$
@@ -2658,6 +2651,16 @@
 (^|\.)tongji-res1\.meizu\.com$
 (^|\.)tongji\.meizu\.com$
 (^|\.)aider-res\.meizu\.com$
+(^|\.)ads\.gionee\.com$
+(^|\.)pdl\.gionee\.com$
+(^|\.)adres\.myaora\.net$
+(^|\.)adcore\.lenovomm\.com$
+(^|\.)pushapi\.lenovomm\.com$
+(^|\.)susapi\.lenovomm\.com$
+(^|\.)adapi\.lenovogame\.com$
+(^|\.)lcs\.dev\.surepush\.cn$
+(^|\.)susapi\.dev\.surepush\.cn$
+(^|\.)test\.surepush\.cn$
 (^|\.)adfuture\.cn$
 (^|\.)bigdata\.adfuture\.cn$
 (^|\.)folder\.adfuture\.cn$
@@ -2747,28 +2750,14 @@
 (^|\.)dvb\.pandora\.xiaomi\.com$
 (^|\.)jellyfish\.pandora\.xiaomi\.com$
 (^|\.)stat\.pandora\.xiaomi\.com$
-(^|\.)irs01\.com$
 (^|\.)mivideo\.g\.mi\.com$
-(^|\.)inside\.bitcomet\.com$
-(^|\.)info\.gomlab\.com$
-(^|\.)playinfo\.gomlab\.com$
-(^|\.)promotion\.gomlab\.com$
-(^|\.)adimg\.daumcdn\.net$
-(^|\.)analytics\.ad\.daum\.net$
-(^|\.)display\.ad\.daum\.net$
-(^|\.)track\.tiara\.daum\.net$
-(^|\.)live\.tvpot\.daum\.net$
-(^|\.)info\.pinyin\.sogou\.com$
-(^|\.)ping\.pinyin\.sogou\.com$
-(^|\.)conf\.vidown\.cn$
-(^|\.)gg\.vidown\.cn$
-(^|\.)minisite\.vidown\.cn$
-(^|\.)rtlog\.vidown\.cn$
-(^|\.)tj\.vidown\.cn$
-(^|\.)ad\.winrar\.com\.cn$
-(^|\.)adv2\.downsave\.com$
-(^|\.)mini\.jijiplayer\.com$
-(^|\.)txtad\.jijiplayer\.com$
+(^|\.)stats\.mokeedev\.com$
+(^|\.)adsfs\.oppomobile\.com$
+(^|\.)adx\.ads\.oppomobile\.com$
+(^|\.)bdapi\.ads\.oppomobile\.com$
+(^|\.)data\.ads\.oppomobile\.com$
+(^|\.)httpdns\.push\.oppomobile\.com$
+(^|\.)analytics\.xgimi\.com$
 (^|\.)2345api\.dftoutiao\.com$
 (^|\.)2345apicode\.dftoutiao\.com$
 (^|\.)actlog\.dftoutiao\.com$
@@ -3231,10 +3220,33 @@
 (^|\.)baidu1\.weather\.com\.cn$
 (^|\.)mc\.weather\.com\.cn$
 (^|\.)ad\.zuimeitianqi\.com$
+(^|\.)bd1\.zuimeitianqi\.com$
+(^|\.)bd2\.zuimeitianqi\.com$
+(^|\.)hwad\.zuimeitianqi\.com$
 (^|\.)stat\.zuimeitianqi\.com$
 (^|\.)business\.inveno\.com$
 (^|\.)zuimeitianqi\.inveno\.com$
 (^|\.)update\.coolyun\.com$
+(^|\.)inside\.bitcomet\.com$
+(^|\.)info\.gomlab\.com$
+(^|\.)playinfo\.gomlab\.com$
+(^|\.)promotion\.gomlab\.com$
+(^|\.)adimg\.daumcdn\.net$
+(^|\.)analytics\.ad\.daum\.net$
+(^|\.)display\.ad\.daum\.net$
+(^|\.)track\.tiara\.daum\.net$
+(^|\.)live\.tvpot\.daum\.net$
+(^|\.)info\.pinyin\.sogou\.com$
+(^|\.)ping\.pinyin\.sogou\.com$
+(^|\.)conf\.vidown\.cn$
+(^|\.)gg\.vidown\.cn$
+(^|\.)minisite\.vidown\.cn$
+(^|\.)rtlog\.vidown\.cn$
+(^|\.)tj\.vidown\.cn$
+(^|\.)ad\.winrar\.com\.cn$
+(^|\.)adv2\.downsave\.com$
+(^|\.)mini\.jijiplayer\.com$
+(^|\.)txtad\.jijiplayer\.com$
 (^|\.)d2ecd088ed70\.idoc58\.com$
 (^|\.)e\.cdntlz\.cn$
 (^|\.)e\.evpywi\.cn$
@@ -3283,6 +3295,55 @@
 (^|\.)ee\.2v0ni\.cn$
 (^|\.)m\.20mao\.com$
 (^|\.)m\.gpzndq\.cn$
+(^|\.)baiducom\.bj\.bcebos\.com$
+(^|\.)ee\.32z8d\.cn$
+(^|\.)ee\.57m1j\.cn$
+(^|\.)ee\.57m1j\.com$
+(^|\.)ee\.805zx\.cn$
+(^|\.)jc\.0351dvd\.cn$
+(^|\.)lkxanf7ad6g\.zgyryt\.com$
+(^|\.)m\.3m49h\.cn$
+(^|\.)m\.57m1j\.cn$
+(^|\.)m\.m216j\.cn$
+(^|\.)m\.m216j\.com$
+(^|\.)m\.r528e\.cn$
+(^|\.)mhwozc\.cn$
+(^|\.)photo\.krryh\.cn$
+(^|\.)up\.clscsbcj\.com$
+(^|\.)url\.txt2019\.cc$
+(^|\.)www\.poijugh\.top$
+(^|\.)yijuxie\.com$
+(^|\.)z1\.zhishidu\.com$
+(^|\.)z2\.zhishidu\.com$
+(^|\.)s\.23dsf\.top$
+(^|\.)baidu\.tlssyg\.com$
+(^|\.)ee\.60w3s\.cn$
+(^|\.)ee\.6x53p\.cn$
+(^|\.)ee\.8tk5d\.cn$
+(^|\.)ee\.hdboping\.com$
+(^|\.)ee\.t3j6a\.cn$
+(^|\.)kil\.longkoupeanut\.cn$
+(^|\.)m\.8tk5d\.cn$
+(^|\.)m\.cdxtny\.cn$
+(^|\.)m\.hdboping\.com$
+(^|\.)m\.t3j6a\.cn$
+(^|\.)mvo\.mftgyh\.xyz$
+(^|\.)nbgorv\.cn$
+(^|\.)vpn\.baolq666\.com$
+(^|\.)weizjzg\.com$
+(^|\.)www\.ucbaba\.top$
+(^|\.)bs\.csshq\.com\.cn$
+(^|\.)m\.91heima\.cn$
+(^|\.)m\.hua6\.cn$
+(^|\.)m\.zbhbs\.cn$
+(^|\.)cd\.jejre\.cn$
+(^|\.)mvo\.sqa54e\.xyz$
+(^|\.)m\.bogubogu\.cn$
+(^|\.)m\.198nc\.cn$
+(^|\.)mvo\.lki6hy\.xyz$
+(^|\.)t\.basictool\.vip$
+(^|\.)t\.trackingxnads\.com$
+(^|\.)t\.hmwebs\.top$
 (^|\.)a\.tribalfusion\.com$
 (^|\.)acuityplatform\.com$
 (^|\.)ad-delivery\.net$
@@ -8991,6 +9052,7 @@
 (^|\.)tags\.growingio\.com$
 (^|\.)growingio\.com$
 (^|\.)www\.growingio\.com$
+(^|\.)irs01\.com$
 (^|\.)a\.irs01\.com$
 (^|\.)h\.irs01\.com$
 (^|\.)iqiyi\.irs01\.com$
@@ -9954,37 +10016,37 @@
 (^|\.)www\.inoprosport\.su$
 (^|\.)www\.tns-counter\.ru$
 (^|\.)x\.bidswitch\.net$
-(^|\.)20191101\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191102\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191103\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191104\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191105\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191106\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191107\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191108\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191109\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191110\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191111\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191112\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191113\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191114\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191115\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191116\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191117\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191118\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191119\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191120\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191121\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191122\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191123\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191124\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191125\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191126\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191127\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191128\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191129\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191130\.logic\.cpm\.cm\.kankan\.com$
-(^|\.)20191131\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191201\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191202\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191203\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191204\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191205\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191206\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191207\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191208\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191209\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191210\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191211\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191212\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191213\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191214\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191215\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191216\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191217\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191218\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191219\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191220\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191221\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191222\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191223\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191224\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191225\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191226\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191227\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191228\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191229\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191230\.logic\.cpm\.cm\.kankan\.com$
+(^|\.)20191231\.logic\.cpm\.cm\.kankan\.com$
 (^|\.)018520\.com$
 (^|\.)13023\.url\.7wkw\.com$
 (^|\.)30350f\.com$
@@ -10137,6 +10199,3 @@
 (^|\.)statistics\.liusha\.info$
 (^|\.)template\.liusha\.info$
 (^|\.)j\.credit\.wwz114\.cn$
-
-
-#**********************************************************************
